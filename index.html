@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Appointments</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="jumbotron">Appointment Maker</h1>
+      <form id="name">
+        <div class="form-group">
+          <label for="name">What is your name?</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+      </form>
+      <form id="need">
+        <div class="form-group">
+          <label for="need">What can I help you with?</label>
+          <input id="need" class="form-control" type="text">
+        </div>
+      </form>
+      <form id="meeting-time">
+        <div class="form-group">
+          <label for="meeting-time">Choose a time for your appointment:</label>
+          <input type="datetime-local" id="meeting-time"
+            name="meeting-time" value="2019-09-20T14:30"
+            min="2019-09-15T00:00" max="2019-12-31T00:00">
+        </div> 
+      </form>
+      <button type="submit" class="btn">Schedule!</button> 
+    </div>
+  </body>
+</html>
